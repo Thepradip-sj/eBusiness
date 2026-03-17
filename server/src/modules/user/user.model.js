@@ -31,4 +31,4 @@ const userSchema= new mongoose.Schema(
   }
 );
 
-modules.export=userSchema;
+module.exports=userSchema;

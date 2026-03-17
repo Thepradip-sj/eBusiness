@@ -3,12 +3,12 @@ const mongoose=require("mongoose");
 const businessSchema= new mongoose.Schema(
 {
     name:{
-        type: string,
+        type: String,
         required: true,
         trim:true,
     },
     Subscription:{
-        type:string,
+        type:String,
         enum :["free","pro","enterprise"],
         default: "free",
     },
@@ -17,4 +17,4 @@ const businessSchema= new mongoose.Schema(
         timestamps:true,
     }
 );
-modules.export=businessSchema;
+module.exports=businessSchema;
